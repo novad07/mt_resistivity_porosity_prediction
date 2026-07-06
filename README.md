@@ -20,7 +20,7 @@ conda env create -f environment.yml
 conda activate forge-porosity-ml
 ```
 
-The environment file includes TensorFlow, Keras Tuner, scikit-learn, lasio for LAS file parsing, and MTpy for dimensionality and strike analysis.
+The environment file includes TensorFlow, Keras Tuner, scikit-learn, and lasio for LAS file parsing.
 
 # Data
 
