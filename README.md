@@ -56,25 +56,6 @@ The final dataset consists of 1476 points at 1 meter depth resolution, with MT r
 - Collapsed prediction penalty to prevent constant output on flat validation zones
 - Depth based 85/5/10 train validation test split
 
-# Repository Structure
-
-```
-├── data/
-├── notebooks/
-│   ├── 01_cross_correlation_archie_glover.ipynb
-│   ├── 02_mt_depth_identifiability.ipynb
-│   ├── 03_training_test_ablation.ipynb
-│   ├── 04_ann_model.ipynb
-│   ├── 05_lstm_model.ipynb
-│   └── 06_siamese_lstm_model.ipynb
-├── results/
-│   └── model_checkpoints/
-├── paper/
-│   └── iigce2026/
-├── environment.yml
-└── README.md
-```
-
 # Key Findings
 
 MT resistivity at single well scale correlates with depth at a Spearman coefficient near negative one, meaning its contribution to porosity prediction cannot be separated from depth alone at this spatial scale. The AT90 log retains an independent partial correlation of negative 0.376 after depth is controlled for, indicating that near wellbore resistivity carries signal beyond what MT alone resolves here. The classical Archie model fails to reproduce the observed resistivity porosity relationship in this fractured granite setting, while a modified Glover formulation recovers a fluid exponent between 1.77 and 1.90 with matrix resistivity between 100 and 183 ohm meters.
