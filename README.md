@@ -32,9 +32,6 @@ data/
 │   ├── 78B_AT90.csv                  # AT90 resistivity log, well FORGE 78B-32
 │   ├── A1_near_78B.csv               # 2D MT inversion resistivity profile
 │   ├── trajectory_78B32.csv          # Directional survey for MD to TVD conversion
-│   └── porosity_GR_VSH_78B32.csv     # Effective porosity, gamma ray, shale volume
-└── processed/
-    └── resampled_1m_78B_AT90.csv     # Final harmonized dataset at 1 m resolution
 ```
 
 The final dataset consists of 1476 points at 1 meter depth resolution, with MT resistivity and depth as input features and effective neutron porosity as the target.
