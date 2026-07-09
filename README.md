@@ -57,3 +57,7 @@ The final dataset consists of 1476 points at 1 meter depth resolution, with MT r
 MT resistivity at single well scale correlates with depth at a Spearman coefficient near negative one, meaning its contribution to porosity prediction cannot be separated from depth alone at this spatial scale. The AT90 log retains an independent partial correlation of negative 0.376 after depth is controlled for, indicating that near wellbore resistivity carries signal beyond what MT alone resolves here. The classical Archie model fails to reproduce the observed resistivity porosity relationship in this fractured granite setting, while a modified Glover formulation recovers a fluid exponent between 1.77 and 1.90 with matrix resistivity between 100 and 183 ohm meters.
 
 On the test set, all three architectures achieve comparable MAPE, with LSTM at 5.10 percent, Siamese-LSTM at 5.62 percent, and ANN at 6.22 percent. Negative R² values on the test set are expected under this depth based splitting scheme and reflect distributional shift rather than architecture failure, since the test interval lies outside the depth range seen during training.
+
+![Predicted vs Actual Porosity Profile](https://drive.google.com/uc?export=view&id=1WYzbdb1iuxWocswYCO5Vhd6SovqMBejV)
+
+*Figure. Predicted versus actual NDPHI profile along depth at well FORGE 78B-32, showing consistent tracking within the training and validation zone and divergence in the test zone consistent with the depth confounding behavior discussed above.*
